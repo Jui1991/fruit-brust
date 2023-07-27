@@ -8,7 +8,19 @@
     align-items: center;
 }
 
-
+.banner-overlay {
+    position: relative;
+  }
+  
+  .banner-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha (opacity) value to control the darkness */
+  }
 
 
 
@@ -33,27 +45,28 @@
             display: none;
         }  
         
-      .tagg{
+    .tagg{
         display: none;
       }
     
     .card {
         flex-basis: 100%;
-        order: 1; /* Display the card first in the column by default */
-        /* Other card styles */
+        order: 1; /* Display the card first in the column*/
+       
     }
       
     .text-left {
         flex-basis: 100%;
-        order: 2; /* Display the text-left second in the column by default */
-        /* Other text-left styles */
+        order: 2; /* Display the text-left second in the column*/
+        
     }
       
     .text-right {
         flex-basis: 100%;
-        order: 3; /* Display the text-right third in the column by default */
-        /* Other text-right styles */
+        order: 3; /* Display the text-right third in the column */
+       
     }
+    
 }
 
 @media screen and (min-width:577px) and (max-width:960px) {
