@@ -29,13 +29,31 @@
     .team-right p{
         padding: 10px;
         }
-        .item{
+    .item{
             display: none;
         }  
         
       .tagg{
         display: none;
       }
+    
+    .card {
+        flex-basis: 100%;
+        order: 1; /* Display the card first in the column by default */
+        /* Other card styles */
+    }
+      
+    .text-left {
+        flex-basis: 100%;
+        order: 2; /* Display the text-left second in the column by default */
+        /* Other text-left styles */
+    }
+      
+    .text-right {
+        flex-basis: 100%;
+        order: 3; /* Display the text-right third in the column by default */
+        /* Other text-right styles */
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:960px) {
