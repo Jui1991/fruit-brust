@@ -1,0 +1,46 @@
+.date-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .team,.date-section{
+        flex-direction: column;
+    }
+    .team h2,p{
+        text-align: center;
+    }
+    .team h1{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .team-right{
+        flex-direction: column-reverse;
+    }
+    .team-right p{
+        padding: 10px;
+        }
+        .item{
+            display: none;
+        }  
+        
+      .tagg{
+        display: none;
+      }
+}
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    
+      .tagg{
+        display: none;
+      }
+}
